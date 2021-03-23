@@ -99,7 +99,7 @@ highlight Todo guifg=#d78700 guibg=NONE gui=reverse ctermfg=172 ctermbg=NONE cte
 highlight Underlined guifg=#87afaf guibg=NONE gui=NONE ctermfg=109 ctermbg=NONE cterm=NONE
 highlight VertSplit guifg=#262626 guibg=#121212 gui=NONE ctermfg=235 ctermbg=233 cterm=NONE
 highlight VimCommentTitle guifg=#767676 guibg=NONE gui=reverse ctermfg=243 ctermbg=NONE cterm=reverse
-highlight Visual guifg=#dfaf00 guibg=NONE gui=reverse ctermfg=32 ctermbg=NONE cterm=reverse
+highlight Visual guifg=#5f00af guibg=#eeeeee gui=reverse ctermfg=55 ctermbg=255 cterm=reverse
 highlight WarningMsg guifg=#ff875f guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE
 highlight WildMenu guifg=#c6c6c6 guibg=NONE gui=reverse ctermfg=251 ctermbg=NONE cterm=reverse
 highlight netrwExe guifg=#5f8787 guibg=NONE gui=NONE ctermfg=65 ctermbg=NONE cterm=NONE
