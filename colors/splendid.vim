@@ -1,7 +1,10 @@
 set background=dark
 
+hi clear
+
 highlight clear
-	if exists("syntax_on")
+
+if exists("syntax_on")
 	syntax reset
 endif
 
@@ -14,23 +17,62 @@ highlight Function guifg=#dfaf87 guibg=NONE gui=NONE ctermfg=180 ctermbg=NONE ct
 highlight Identifier guifg=#dfaf87 guibg=NONE gui=NONE ctermfg=180 ctermbg=NONE cterm=NONE
 highlight Statement guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
 highlight Constant guifg=#5f8787 guibg=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE
-highlight Type guifg=#5f8787 guibg=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE
+highlight Type guifg=#5f87af guibg=NONE gui=NONE ctermfg=67 ctermbg=NONE cterm=NONE
 highlight String guifg=#5f875f guibg=NONE gui=NONE ctermfg=65 ctermbg=234 cterm=NONE
+highlight Keyword guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
 highlight Special guifg=#875f5f guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
 highlight Number guifg=#af5f00 guibg=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
 highlight Conditional guifg=#875f5f guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
 highlight Operator guifg=#949494 guibg=NONE gui=NONE ctermfg=246 ctermbg=NONE cterm=NONE
 highlight Title guifg=#875f5f guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
 highlight StorageClass guifg=#dfaf87 guibg=NONE gui=NONE ctermfg=180 ctermbg=NONE cterm=NONE
-highlight htmlItalic guifg=#ff875f guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE
-highlight htmlEndTag guifg=#dfaf87 guibg=NONE gui=NONE ctermfg=180 ctermbg=NONE cterm=NONE
-highlight cssTagName guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
-highlight cssClassName guifg=#ff875f guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE
-highlight cssIdentifier guifg=#ff875f guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE
+highlight Structure guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
 highlight Normal guifg=#ffffdf guibg=#121212 gui=NONE ctermfg=230 ctermbg=233 cterm=NONE
 highlight Comment guifg=#4e4e4e guibg=NONE gui=NONE ctermfg=239 ctermbg=NONE cterm=NONE
 
+
+" C
+hi! link cFormat Identifier
+hi! link cOperator Constant
+
+" C++
+" hi! link cppSTLfunction Number
+
+" Haskell
+hi! link haskellRecordField Structure
+highlight haskellConstructor guifg=#5f8787 guibg=NONE gui=NONE ctermfg=101 ctermbg=NONE cterm=NONE
+
+" Elixir
+highlight elixirAtom guifg=#8787d7 guibg=NONE gui=NONE ctermfg=104 ctermbg=NONE cterm=NONE
+hi! link elixirBlockDefinition Keyword
+
+" Python
+hi! link pythonOperator Statement
+
+" Go
+highlight goConditional guifg=#4e4e4e guibg=NONE gui=NONE ctermfg=102 ctermbg=NONE cterm=NONE
+
+" JavaScript
+hi! link javaScriptValue Constant
+hi! link javaScriptTemplateDelim Identifier
+hi! link javaScriptTemplateString String
+
+" Lua
+hi! link luaOperator Conditional
+
+" HTML
+hi! link htmlTag Statement
+hi! link htmlTagName htmlTag
+highlight htmlItalic guifg=#ff875f guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE
+highlight htmlEndTag guifg=#dfaf87 guibg=NONE gui=NONE ctermfg=180 ctermbg=NONE cterm=NONE
+
+" CSS
+highlight cssTagName guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
+highlight cssClassName guifg=#ff875f guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE
+highlight cssIdentifier guifg=#ff875f guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE
+
 " VIMSCRIPT
+highlight link vimOper Normal
 highlight link vimAutoCmdSfxList Type
 highlight link vimAutoEventList Identifier
 highlight link vimCmdSep Special
@@ -86,7 +128,7 @@ highlight PmenuThumb guifg=#1c1c1c guibg=#1c1c1c gui=NONE ctermfg=234 ctermbg=23
 highlight Question guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
 highlight Search guifg=#dfaf00 guibg=NONE gui=reverse ctermfg=249 ctermbg=NONE cterm=reverse
 highlight SignColumn guifg=#87875f guibg=#080808 gui=NONE ctermfg=101 ctermbg=232 cterm=NONE
-highlight SpecialComment guifg=#585858 guibg=NONE gui=reverse ctermfg=240 ctermbg=NONE cterm=reverse
+highlight SpecialComment guifg=#585858 guibg=#4e4e4e gui=reverse ctermfg=235 ctermbg=242 cterm=reverse
 highlight SpecialKey guifg=#262626 guibg=NONE gui=NONE ctermfg=235 ctermbg=NONE cterm=NONE
 highlight StatusLine guifg=#eeeeee guibg=#1c1c1c gui=none ctermfg=255 ctermbg=234 cterm=none
 highlight StatusLineNC guifg=#585858 guibg=#1c1c1c gui=none ctermfg=240 ctermbg=234 cterm=none
@@ -104,3 +146,4 @@ highlight WarningMsg guifg=#ff875f guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE 
 highlight WildMenu guifg=#c6c6c6 guibg=NONE gui=reverse ctermfg=251 ctermbg=NONE cterm=reverse
 highlight netrwExe guifg=#5f8787 guibg=NONE gui=NONE ctermfg=65 ctermbg=NONE cterm=NONE
 highlight netrwlist guifg=#875f5f guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
+
