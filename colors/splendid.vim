@@ -45,6 +45,8 @@ highlight haskellConstructor guifg=#5f8787 guibg=NONE gui=NONE ctermfg=101 cterm
 " Elixir
 highlight elixirAtom guifg=#8787d7 guibg=NONE gui=NONE ctermfg=104 ctermbg=NONE cterm=NONE
 hi! link elixirBlockDefinition Keyword
+highlight elixirDocTest guifg=#5f875f guibg=NONE gui=NONE ctermfg=65 ctermbg=None cterm=NONE
+
 
 " Python
 hi! link pythonOperator Statement
