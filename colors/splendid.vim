@@ -29,7 +29,6 @@ highlight StorageClass guifg=#dfaf87 guibg=NONE gui=NONE ctermfg=180 ctermbg=NON
 highlight Structure guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
 highlight Normal guifg=#ffffdf guibg=#121212 gui=NONE ctermfg=230 ctermbg=233 cterm=NONE
 highlight Comment guifg=#4e4e4e guibg=NONE gui=NONE ctermfg=239 ctermbg=NONE cterm=NONE
-Function
 
 " C
 hi! link cFormat Identifier
@@ -50,7 +49,7 @@ highlight elixirDocTest guifg=#5f5f87 guibg=NONE gui=NONE ctermfg=60 ctermbg=Non
 " Python
 hi! link pythonOperator Statement
 
-# Semshi
+" Semshi
 hi semshiGlobal          ctermfg=167 guifg=#fb4934
 hi semshiImported        ctermfg=214 guifg=#fabd2f cterm=bold gui=bold
 hi semshiParameter       ctermfg=109 guifg=#85a598
