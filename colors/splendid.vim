@@ -29,7 +29,7 @@ highlight StorageClass guifg=#dfaf87 guibg=NONE gui=NONE ctermfg=180 ctermbg=NON
 highlight Structure guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
 highlight Normal guifg=#ffffdf guibg=#121212 gui=NONE ctermfg=230 ctermbg=233 cterm=NONE
 highlight Comment guifg=#4e4e4e guibg=NONE gui=NONE ctermfg=239 ctermbg=NONE cterm=NONE
-
+Function
 
 " C
 hi! link cFormat Identifier
@@ -47,9 +47,23 @@ highlight elixirAtom guifg=#8787d7 guibg=NONE gui=NONE ctermfg=104 ctermbg=NONE 
 hi! link elixirBlockDefinition Keyword
 highlight elixirDocTest guifg=#5f5f87 guibg=NONE gui=NONE ctermfg=60 ctermbg=None cterm=NONE
 
-
 " Python
 hi! link pythonOperator Statement
+
+# Semshi
+hi semshiGlobal          ctermfg=167 guifg=#fb4934
+hi semshiImported        ctermfg=214 guifg=#fabd2f cterm=bold gui=bold
+hi semshiParameter       ctermfg=109 guifg=#85a598
+hi semshiParameterUnused ctermfg=106 guifg=#665c54 cterm=underline
+hi semshiAttribute       ctermfg=108  guifg=fg
+hi semshiSelf            ctermfg=109 guifg=#85a598
+hi semshiSelected        cterm=reverse ctermfg=214 ctermbg=235 gui=reverse guifg=#fabd2f guibg=#282828
+hi def semshiLocal           ctermfg=209 guifg=#ff875f
+hi def semshiFree            ctermfg=218 guifg=#ffafd7
+hi def semshiUnresolved      ctermfg=214 guifg=#fabd2f cterm=bold gui=bold
+
+hi def semshiErrorSign       ctermfg=231 guifg=#ffffff ctermbg=160 guibg=#d70000
+hi def semshiErrorChar       ctermfg=231 guifg=#ffffff ctermbg=160 guibg=#d70000
 
 " Go
 highlight goConditional guifg=#4e4e4e guibg=NONE gui=NONE ctermfg=102 ctermbg=NONE cterm=NONE
