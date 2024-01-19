@@ -7,7 +7,7 @@ let g:colors_name="lightdid"
 
 
 "COMMON COLORS AND SETTINGS
-highlight PreProc guifg=#875f5f guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
+highlight PreProc guifg=#875f4f guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
 highlight Function guifg=#000087 guibg=NONE gui=NONE ctermfg=18 ctermbg=NONE cterm=NONE
 highlight Identifier guifg=#000087 guibg=NONE gui=NONE ctermfg=18 ctermbg=NONE cterm=NONE
 highlight Statement guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
